@@ -2,11 +2,11 @@ package com.baidu.producer;
 
 import java.io.IOException;
 
-import com.alibaba.dubbo.config.ApplicationConfig;
-import com.alibaba.dubbo.config.ProtocolConfig;
-import com.alibaba.dubbo.config.RegistryConfig;
-import com.alibaba.dubbo.config.ServiceConfig;
 import com.baidu.api.ISayService;
+import org.apache.dubbo.config.ApplicationConfig;
+import org.apache.dubbo.config.ProtocolConfig;
+import org.apache.dubbo.config.RegistryConfig;
+import org.apache.dubbo.config.ServiceConfig;
 
 public class ProducerMain {
 	public static void main(String[] args) throws IOException {
@@ -19,7 +19,7 @@ public class ProducerMain {
 
 		ProtocolConfig protocol = new ProtocolConfig();
 		protocol.setName("dubbo");
-		protocol.setServer("netty");
+		protocol.setServer("netty4");
 		protocol.setPort(9998);
 		protocol.setThreads(10);
 
