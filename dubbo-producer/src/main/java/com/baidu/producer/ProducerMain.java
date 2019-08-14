@@ -18,9 +18,10 @@ public class ProducerMain {
 		registry.setAddress("zookeeper://127.0.0.1:2181");
 
 		ProtocolConfig protocol = new ProtocolConfig();
-		protocol.setName("http");
+		protocol.setName("dubbo");
+		protocol.setServer("netty");
 		protocol.setPort(9998);
-		protocol.setThreads(200);
+		protocol.setThreads(10);
 
 		config.setRegistry(registry);
 
