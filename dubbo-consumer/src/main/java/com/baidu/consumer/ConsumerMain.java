@@ -1,10 +1,10 @@
 package com.baidu.consumer;
 
-import com.alibaba.dubbo.config.ApplicationConfig;
-import com.alibaba.dubbo.config.ProtocolConfig;
-import com.alibaba.dubbo.config.ReferenceConfig;
-import com.alibaba.dubbo.config.RegistryConfig;
 import com.baidu.api.ISayService;
+import org.apache.dubbo.config.ApplicationConfig;
+import org.apache.dubbo.config.ProtocolConfig;
+import org.apache.dubbo.config.ReferenceConfig;
+import org.apache.dubbo.config.RegistryConfig;
 
 public class ConsumerMain {
 	public static void main(String[] args) {
@@ -17,6 +17,7 @@ public class ConsumerMain {
 		ProtocolConfig protocol = new ProtocolConfig();
 		protocol.setPort(9998);
 		protocol.setThreads(10);
+		protocol.setServer("netty4");
 
 		config.setRegistry(registry);
 
