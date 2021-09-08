@@ -11,7 +11,7 @@
 	<properties>
 		<maven.compiler.target>1.8</maven.compiler.target>
 		<maven.compiler.source>1.8</maven.compiler.source>
-		<dubbo.version>2.7.3</dubbo.version>
+		<dubbo.version>2.7.13</dubbo.version>
 	</properties>
 	<artifactId>dubbo-producer</artifactId>
 
